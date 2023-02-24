@@ -35,13 +35,14 @@ main{
     background: white;
     background-image: url("imagenes/Muñeco.png");
     background-repeat: no-repeat;
+    background-position: center;
     border: none;
     border-radius: 24px;
     color: #0A3871;
     margin-left: 98px;
     margin-top: 20px;
     position: absolute;
-    top: 150px;
+    top: 141px;
     right: 50px;
 }
 
@@ -84,9 +85,13 @@ main{
     margin-left: 108px;
     margin-top: 402px;
     position: absolute;
-    top: 175px;
+    top: 119px;
     right: 200px;
     width: 280px;
+}
+
+.btn-encriptar:hover, .btn-desencriptar:hover, .btn-copiar:hover {
+    border-color: #ffa200;
 }
 
 .informacion{
@@ -94,5 +99,23 @@ main{
     font-size: 15px;
 }
 
-/* REVISAR EL ORDEN DE TODO ANTES DE EMPEZAR CON LA LOGICA
-AGREGARLE UN FOOTER PARA PONERLE EL NOMBRE Y EL ENLACE A GITHUB YA TALES */
+.info-footer{
+    text-align: center;
+    background-image: url(imagenes/gif1.gif);
+
+    padding: 20px;
+    color: #bee21d;
+}
+
+.datos-footer{
+    text-align: center;
+    background-image: url(imagenes/gif1.gif);
+    padding: 55px;
+    color: #F3F5FC;
+}
+
+
+
+/*AGREGARLE UN FOOTER PARA PONERLE EL NOMBRE Y EL ENLACE A GITHUB Y TALES 
+hover en los botones
+*/
