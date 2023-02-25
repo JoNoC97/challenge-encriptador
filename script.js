@@ -1,3 +1,5 @@
+alert("Bienvenido al encriptador de texto. Aqui podras escribir un texto en el primer recuadro, luego haz clic en Encriptar y verás tu texto encriptado en el siguiente cuadro. Podrás encriptar y desencriptar el texto que quieras. ¡Diviertete!")
+
 const textArea = document.querySelector(".text-area")
 const mensaje = document.querySelector(".mensaje")
 
