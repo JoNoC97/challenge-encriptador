@@ -1,4 +1,6 @@
-alert("Bienvenido al encriptador de texto. Aqui podras escribir un texto en el primer recuadro, luego haz clic en Encriptar y verás tu texto encriptado en el siguiente cuadro. Podrás encriptar y desencriptar el texto que quieras. ¡Diviertete!")
+alert("Bienvenido al encriptador de texto. Aqui debes escribir un texto en el primer recuadro, luego haz clic en Encriptar y verás tu texto encriptado en el siguiente cuadro. Podrás encriptar y desencriptar el texto que quieras. ¡Diviertete!")
+
+alert("Si quieres acceder al código en github, puedes hacer click en el logo de github al final de la pagina :)")
 
 const textArea = document.querySelector(".text-area")
 const mensaje = document.querySelector(".mensaje")
@@ -66,7 +68,7 @@ function copiar(){
     }
     mensaje.select();
     navigator.clipboard.writeText(mensaje.value)
-        .then(() => alert("Texto Copiado"))
+        .then(() => alert("¡Texto copiado!"))
         .catch(() => alert("Error al copiar"));
     mensaje.value = "";
 }
