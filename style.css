@@ -135,6 +135,9 @@ p img{
 
 
 @media screen and (max-width:480px){
+    header{
+        text-align: center;
+    }
     .logo{
         width:25%;
     }
@@ -154,6 +157,10 @@ p img{
         margin-top: 10px;   
     }
 
+    h6{
+        text-align: center;
+    }
+    
     .mensaje{
         position: static;
         width: 90%;
