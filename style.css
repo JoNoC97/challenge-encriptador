@@ -22,7 +22,7 @@ main{
     border: none;
     color: #0A3871;
     margin-top: 90px;
-    border-radius: 24px;;
+    border-radius: 20px;;
     text-transform: lowercase;
 }
 
@@ -37,8 +37,8 @@ main{
     background-repeat: no-repeat;
     background-position: center;
     border: none;
-    border-radius: 24px;
-    color: #0A3871;
+    border-radius: 20px;
+    color: #0a6e08;
     margin-left: 98px;
     margin-top: 20px;
     position: absolute;
@@ -90,8 +90,14 @@ main{
     width: 280px;
 }
 
-.btn-encriptar:hover, .btn-desencriptar:hover, .btn-copiar:hover {
+.btn-encriptar:hover, .btn-desencriptar:hover{
     border-color: #ffa200;
+    color: #ffa200;
+}
+
+.btn-copiar:hover{
+    border-color: #0a6e08;
+    color: #0a6e08;
 }
 
 .informacion{
