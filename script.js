@@ -3,6 +3,18 @@ alert("Bienvenido al encriptador de texto. Aqui podras escribir un texto en el p
 const textArea = document.querySelector(".text-area")
 const mensaje = document.querySelector(".mensaje")
 
+
+function validarTexto(){
+    let textoEscrito = document.querySelector(".text-area").value;
+    let validador = textoEscrito.match(/^[a-z]*$/);
+
+    if(!validador || validador === 0) {
+        alert("Solo son permitidas letras minúsculas y sin acentos")
+        location.reload();
+        return true;
+    }
+}
+
 // La letra "e" es convertida para "enter"
 // La letra "i" es convertida para "imes"
 // La letra "a" es convertida para "ai"
@@ -45,4 +57,16 @@ function desencriptar(stringDesencriptada){
         }
     }
     return stringDesencriptada;
+}
+
+function copiar(){
+    if (mensaje.value === "") {
+        alert("No hay texto para copiar. Inserta un texto para Encriptar/Desencriptar primero");
+        return;
+    }
+    mensaje.select();
+    navigator.clipboard.writeText(mensaje.value)
+        .then(() => alert("Texto Copiado"))
+        .catch(() => alert("Error al copiar"));
+    mensaje.value = "";
 }
