@@ -114,3 +114,47 @@ main{
     color: #F3F5FC;
 }
 
+@media screen and (max-width:480px){
+    .logo{
+        width:25%;
+    }
+
+    main{
+        margin: 0 0 0 20px;
+        
+    }
+    .informacion{
+        display: block;
+        width: 90%;
+    }
+
+    .text-area{
+        position: static;
+        width: 90%;
+        margin-top: 10px;   
+    }
+
+    .mensaje{
+        position: static;
+        width: 90%;
+        margin-left: 5px;
+
+    }
+
+    .btn-encriptar{
+        width: 45%;
+    }
+
+    .btn-desencriptar{
+        width: 45%;
+        margin-left: 10px;
+    }
+
+    .btn-copiar{
+        position: static;
+        margin: 10px;
+        width: 90%;
+
+    }
+
+}
