@@ -125,8 +125,11 @@ main{
 }
 
 .logo-github{
-    text-align: center;
     background-image: url(imagenes/gif1.gif);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
 }
 
 p img{
